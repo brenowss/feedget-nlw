@@ -6,6 +6,9 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -23,6 +26,7 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
     'react/react-in-jsx-scope': 'off',
+    'react/jsx-no-bind': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
